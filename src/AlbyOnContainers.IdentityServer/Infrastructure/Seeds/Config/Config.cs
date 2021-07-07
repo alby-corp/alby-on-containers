@@ -75,16 +75,16 @@ namespace IdentityServer.Infrastructure.Seeds.Config
                     RequirePkce = true,
                     RequireClientSecret = false,
                     RequireConsent = true,
-                    AllowedCorsOrigins = { "https://localhost:4000" },
-                    RedirectUris = { "https://localhost:4000/authentication/login-callback" },
-                    PostLogoutRedirectUris = { "https://localhost:4000/" },
+                    AllowedCorsOrigins = { "https://localhost:4001" },
+                    RedirectUris = { "https://localhost:4001/authentication/login-callback" },
+                    PostLogoutRedirectUris = { "https://localhost:4001/" },
                     Enabled = true,
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Email,
-                        "weatherapi"
+                        "graphQlApi"
                     }
                 },
             };
