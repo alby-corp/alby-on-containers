@@ -70,7 +70,7 @@ namespace IdentityServer.IoC
         public static void AddCorsPolicies(this IServiceCollection services) =>
             services.AddCors(options => 
                 options.AddPolicy("AlbyPolicy",builder => 
-                    builder.AllowAnyOrigin().WithMethods("GET", "POST").WithHeaders()
+                    builder.AllowAnyOrigin().WithMethods("GET", "POST").WithHeaders("Authorization")
             ));
 
         public static void AddAuthenticationWithExternalProviders(this IServiceCollection services)

@@ -83,8 +83,7 @@ namespace IdentityServer.Infrastructure.Seeds.Config
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Email,
-                        "graphQlApi"
+                        IdentityServerConstants.StandardScopes.Email
                     }
                 },
             };
